@@ -23,18 +23,6 @@ const StyledHeader = styled.header`
         padding: 15px 0;
     }
 
-/*
-    .cart-container{
-        padding: 25px;
-        width: 100%;
-    }
-
-    .cart-container a{
-        display: flex;
-        justify-content: center;
-        max-width: fit-content;
-    } */
-
     #cart-icon{
         cursor: pointer;
     }
@@ -48,6 +36,7 @@ export default function Header(){
                 src={StoreLogo}
                 alt='Store logo'
                 className="img"
+                priority={true}
                 />
             </div>
             <div className="cart-container">
@@ -57,6 +46,7 @@ export default function Header(){
                     alt='cart icon'
                     className="img"
                     id="cart-icon"
+                    priority={true}
                     />
                 </Link>
             </div>
