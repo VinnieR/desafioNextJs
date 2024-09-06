@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
     position: static;
     bottom: 0;
     margin-top: 20px;
+    font-size: 1.1rem;
 `
 
 export default function Footer(){

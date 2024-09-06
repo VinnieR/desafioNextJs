@@ -47,7 +47,7 @@ export default function ProductsJS() {
                     type='button'
                     id='filter-button'
                     // onClick={filterHandler}
-                    >Filter </button>
+                    >Filter</button>
                 </div>
             </div>
             <div id='products-container'>

@@ -24,10 +24,17 @@ const globalStyle = createGlobalStyle`
         object-fit: contain;
     }
 
-    Link{
-        width: 100%;
-        height: 100%;
-        background-color: yellow;
+
+    h1, h2, h3, h4, h5, h6{
+        font-family: "tahoma", "arial", sans-serif;
+    }
+
+    p, span{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    button{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     `

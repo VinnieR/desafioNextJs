@@ -8,19 +8,22 @@ import Link from "next/link";
 const StyledHeader = styled.header`
     color: white;
     width: 100%;
-    height: 100px;
-    border-bottom: 2px solid #b3b3b3;
+    height: 75px;
+    border-bottom: 1px solid #b3b3b3;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     & div{
         height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        margin: 5px 60px;
     }
 
+    & .cart-container{
+        padding: 15px 0;
+    }
+
+/*
     .cart-container{
         padding: 25px;
         width: 100%;
@@ -29,7 +32,8 @@ const StyledHeader = styled.header`
     .cart-container a{
         display: flex;
         justify-content: center;
-    }
+        max-width: fit-content;
+    } */
 
     #cart-icon{
         cursor: pointer;
