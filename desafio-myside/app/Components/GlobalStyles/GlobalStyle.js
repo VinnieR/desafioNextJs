@@ -5,6 +5,7 @@ const globalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #262626;
     }
 
     body {
@@ -19,8 +20,16 @@ const globalStyle = createGlobalStyle`
     
     .img{
         height: 100%;
+        width: auto;
         object-fit: contain;
     }
+
+    Link{
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+    }
+
     `
 
 export default globalStyle;
