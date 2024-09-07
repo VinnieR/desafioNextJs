@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
     justify-content: center;
     background-color: #f6f6f6;
     border-top: 1px solid #b3b3b3;
-    position: static;
+    position: relative;
     bottom: 0;
     margin-top: 20px;
     font-size: 1.1rem;

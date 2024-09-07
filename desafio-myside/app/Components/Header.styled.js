@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 
     & div{
         height: 100%;
@@ -21,11 +22,20 @@ const StyledHeader = styled.header`
 
     & .cart-container{
         padding: 15px 0;
+        box-sizing: border-box;
     }
 
     #cart-icon{
         cursor: pointer;
     }
+
+    .img{
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
+
 `
 
 export default function Header(){
