@@ -11,6 +11,7 @@ const globalStyle = createGlobalStyle`
     body {
         font-family: 'Roboto', sans-serif;
         background-color: #fff;
+        min-height: 100vh;
     }
 
     a {
@@ -18,12 +19,6 @@ const globalStyle = createGlobalStyle`
         color: inherit;
     }
     
-    .img{
-        height: 100%;
-        width: auto;
-        object-fit: contain;
-    }
-
 
     h1, h2, h3, h4, h5, h6{
         font-family: "tahoma", "arial", sans-serif;
@@ -35,6 +30,22 @@ const globalStyle = createGlobalStyle`
 
     button{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+
+    .capitalize{
+        text-transform: capitalize;
+    }
+
+    .price{
+        color: #348820;
     }
 
     `

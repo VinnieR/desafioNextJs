@@ -186,10 +186,10 @@ export default function ProductsJS() {
                     )}
                 </div>
             </div>
-            <div id='products-container' style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+            <div id='products-container'>
                 {currentProducts.length > 0 ? (
                     currentProducts.map((product) => (
-                        <StyledCard key={product.id} id={`product-${product.id}`}>
+                        <StyledCard key={product.id} id={`product-${product.id}`} href={`/Products/${product.id}`}>
                             <div className='card-image-container'>
                                 <img src={product.image} alt={product.title} width={150} />
                             </div>
@@ -200,7 +200,7 @@ export default function ProductsJS() {
                                 <div className='card-description-container'>
                                     <p>{product.description.length > 250 ? `${product.description.substr(0, 250)}...` : product.description}</p>
                                 </div>
-                                <p className='card-price'>${product.price}</p>
+                                <p className='card-price price'>${product.price}</p>
                             </div>
                         </StyledCard>
                     ))

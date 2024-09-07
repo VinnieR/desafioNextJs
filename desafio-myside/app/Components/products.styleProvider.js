@@ -96,6 +96,10 @@ const styledProducts = styled.main`
             margin: 0 15px;
         }
 
+        button:active{
+            border-style: none;
+        }
+
         #page-index{
             font-size: 1.1rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

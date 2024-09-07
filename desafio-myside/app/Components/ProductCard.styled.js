@@ -2,7 +2,7 @@
 
 import styled from "styled-components"
 
-const styledCard = styled.div`
+const styledCard = styled.a`
     width: 350px;
     height: 500px;
     border-radius: 10px;
@@ -23,7 +23,6 @@ const styledCard = styled.div`
     & .card-image-container{
         width: 100%;
         height: 300px;
-        /* height: 200px; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -48,7 +47,6 @@ const styledCard = styled.div`
     & .card-price{
         text-align: center;
         margin-top: 15px;
-        color: #348820;
         font-size: 1.5rem;
         font-family: 'Times New Roman', Times, serif;
     }
