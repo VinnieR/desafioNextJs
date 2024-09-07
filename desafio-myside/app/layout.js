@@ -1,14 +1,13 @@
-// app/layout.js
-import GlobalStyleProvider from './Components/GlobalStyles/GlobalStyleProvider';
-
+import StyledComponentsRegistry from '@/app/lib/registry'
+import GlobalStyleProvider from './Components/GlobalStyles/GlobalStyleProvider'
+ 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head />
+    <html>
       <body>
-        <GlobalStyleProvider />
-        {children}
+      <GlobalStyleProvider />
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
-  );
+  )
 }
