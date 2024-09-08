@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const styledProducts = styled.main`
     width: 100%;
-    min-height: 700px;
     max-height: fit-content;
     padding: 0 60px;
 
@@ -15,8 +14,14 @@ const styledProducts = styled.main`
         justify-content: space-between;
     }
 
+    #product-header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #product-header-search{
-        width: 75%;
+        width: 100%;
         margin: 0 30px;
     }
 
@@ -106,6 +111,58 @@ const styledProducts = styled.main`
         }
     }
     
+    @media (max-width: 700px){
+        #product-header-title{
+            font-size: .5rem;
+        }
+
+        #product-header-filter{
+            width: 100%;
+        }
+
+        #product-header-filter *{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 500px){
+        #products-header{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #product-header-title{
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        #product-header-search{
+            margin: 20px 0;
+
+            input{
+                padding: 15px;
+            }
+        }
+
+        #product-header-filter{
+            width: 100%;
+
+            button{
+                padding: 15px;
+                height: 50px;
+            }
+        }
+
+        #product-header-filter *{
+            font-size: 1rem;
+        }
+
+        #products-container{
+            margin-top: 150px;
+        }
+
+    }
 
 `
 

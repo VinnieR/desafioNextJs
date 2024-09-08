@@ -30,7 +30,7 @@ export default function ProductInfo({ product }) {
                 <h3 className='product-info-title'>{product.product.title}</h3>
                 <p className='product-info-description'>{product.product.description}</p>
                 <div id='addToCartContainer'>
-                    <span id='product-info-price' className='price'>Price: ${product.product.price}</span>
+                    <span id='product-info-price' className='price nowrap'>Price: ${product.product.price}</span>
                     <button id="addToCartButton" type='button' onClick={handleAddToCart}>
                         {buttonText}
                     </button>

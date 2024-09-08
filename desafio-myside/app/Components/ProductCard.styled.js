@@ -50,6 +50,24 @@ const styledCard = styled.a`
         font-size: 1.5rem;
         font-family: 'Times New Roman', Times, serif;
     }
+
+    @media (max-width: 879px) {
+        width: 250px;
+        height: 730px;
+
+        h3{
+            margin-top: 45px;
+        }
+    }
+
+    @media (max-width: 680px){
+        width: 100%;
+        height: 550px
+    }
+
+    @media (max-width: 485px){
+        height: 700px
+    }
 `
 
 export default styledCard;

@@ -60,17 +60,19 @@ export default function CartPage() {
                         <ul id='cart-item-container'>
                             {cart.map((item, index) => (
                                 <li key={item.id} className='cart-item'>
-                                    <div className='item-img-container'>
-                                        <img
-                                            src={item.image}
-                                            className='cart-img img'
-                                            alt={item.title}
-                                        />
-                                    </div>
-                                    <div className='cart-item-specs'>
-                                        <h3 className='cart-item-spec'>Product: {item.title}</h3>
-                                        <h4 className='cart-item-spec'>Model: {item.model}</h4>
-                                        <h5 className='cart-item-spec'>Brand: {item.brand}</h5>
+                                    <div className='img-specs-wrapper'>
+                                        <div className='item-img-container'>
+                                            <img
+                                                src={item.image}
+                                                className='cart-img img'
+                                                alt={item.title}
+                                            />
+                                        </div>
+                                        <div className='cart-item-specs'>
+                                            <h3 className='cart-item-spec'>Product: {item.title.substr(0, 50)}</h3>
+                                            <h4 className='cart-item-spec'>Model: {item.model}</h4>
+                                            <h5 className='cart-item-spec'>Brand: {item.brand}</h5>
+                                        </div>
                                     </div>
                                     <div className='cart-item-info-container'>
                                         <p className='cart-item-unit-price cart-item-info nowrap'>Unit Price: <span className='price'>${item.price}</span></p>
