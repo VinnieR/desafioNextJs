@@ -42,12 +42,14 @@ export default function Header(){
     return(
         <StyledHeader>
             <div className="logo-container">
-                <Image
-                src={StoreLogo}
-                alt='Store logo'
-                className="img"
-                priority={true}
-                />
+                <Link href="/">
+                    <Image
+                    src={StoreLogo}
+                    alt='Store logo'
+                    className="img"
+                    priority={true}
+                    />
+                </Link>
             </div>
             <div className="cart-container">
                 <Link href={"/Cart"}>

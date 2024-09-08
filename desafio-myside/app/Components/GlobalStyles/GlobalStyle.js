@@ -46,6 +46,15 @@ const globalStyle = createGlobalStyle`
 
     .price{
         color: #348820;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nowrap{
+        white-space: nowrap;
+    }
+
+    .arial{
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     `

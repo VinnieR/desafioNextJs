@@ -20,6 +20,7 @@ img{
 }
 
 .product-info-container{
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@ img{
 
 .product-info-title{
     font-size: 1.2rem;
-    margin: 10px 0 0;
+    margin: 20px 0 10px;
 }
 
 .product-info-description{
@@ -51,12 +52,16 @@ img{
 #addToCartContainer{
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: center;
-    margin: 10px;
+    margin: 15px;
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-#product-info-price-container{
-
+#product-info-price{
     width: 100%;
     height: 100%;
     display: flex;
