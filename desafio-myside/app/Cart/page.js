@@ -1,10 +1,12 @@
 'use client';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { removeFromCart } from '@/app/redux/cartSlice';
 import Cart from '@/app/Components/Cart.Styled';
 import Header from '../Components/Header.styled';
 import Footer from '../Components/Footer.styled';
+import Link from 'next/link';
 
 export default function CartPage() {
     const cart = useSelector((state) => state.cart.cart);
@@ -12,8 +14,8 @@ export default function CartPage() {
     const [quantities, setQuantities] = useState([]);
 
     useEffect(() => {
-        if (cart.length > 0 && quantities.length === 0) {
-            setQuantities(cart.map(() => 1)); // Inicializa com 1 para todos os itens
+        if (cart.length > 0) {
+            setQuantities(cart.map(item => item.quantity));
         }
     }, [cart]);
 
@@ -41,8 +43,18 @@ export default function CartPage() {
         <div className='flex-container'>
             <Header />
             <Cart>
-                <div className='Cart'>
-                    <h1 id='cart-header'>Your cart</h1>
+            {cart.length === 0 ? (
+                        <div id='empty-cart-container'>  
+                            <h1 id='empty-cart'>Your cart is empty</h1>
+                            <Link
+                            href={'/'}
+                            id='empty-cart-link'
+                            >Keep Browsing</Link>
+                        </div>
+                    ) : (
+                        <>
+                        <div className='Cart'>
+                    <h1 id='cart-header'>Hello User</h1>
                     <h2 id='cart-subheader'>Your cart contains {cart.length} product(s).</h2>
                     <div className='cart-container'>
                         <ul id='cart-item-container'>
@@ -79,7 +91,7 @@ export default function CartPage() {
                                                 +
                                             </button>
                                         </div>
-                                        <h5 className="cart-item-total-value cart-item-info">Total: <span className='price'>{quantities[index] * item.price}</span></h5>
+                                        <h5 className="cart-item-total-value cart-item-info">Total: <span className='price'>${quantities[index] * item.price}</span></h5>
                                     </div>
                                 </li>
                             ))}
@@ -90,6 +102,8 @@ export default function CartPage() {
                         </div>
                     </div>
                 </div>
+                        </>
+                    )}
             </Cart>
             <Footer />
         </div>

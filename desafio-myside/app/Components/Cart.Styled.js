@@ -75,6 +75,9 @@ margin: 15px auto;
         border: 1px solid #bdbdbd;
         margin: 0;
         cursor: pointer;
+        background: #333;
+        color: #cecece;
+
     }
 
     .cart-item-quantity span{
@@ -98,6 +101,10 @@ margin: 15px auto;
         border: 1px solid #cecece;
         background-color: #ececec;
 
+        transform: translateX(-1px);
+        border-left: none;
+        box-shadow: 0 0 1px 1px #ececec;
+
         & .price{
             font-size: 1.2rem;
         }
@@ -112,6 +119,22 @@ margin: 15px auto;
             cursor: pointer;
         }
     }
+
+    #empty-cart-container{
+        text-align: center;
+    }
+
+    #empty-cart{
+        margin-bottom: 25px;
+    }
+
+    #empty-cart-link{
+            padding: 15px 25px;
+            background-color: #333;
+            color: #cecece;
+            border-radius: 10px;
+        }
+
 `
 
 export default Cart;
