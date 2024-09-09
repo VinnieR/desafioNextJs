@@ -80,6 +80,7 @@ export default function CartPage() {
                                             <button
                                                 type="button"
                                                 className='quantity-decrease'
+                                                role='decrease product quanytity'
                                                 onClick={() => decreaseHandler(index)}
                                             >
                                                 -
@@ -88,6 +89,7 @@ export default function CartPage() {
                                             <button
                                                 type="button"
                                                 className="quantity-increase"
+                                                role='increase product quanytity'
                                                 onClick={() => increaseHandler(index)}
                                             >
                                                 +
