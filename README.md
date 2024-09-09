@@ -32,4 +32,19 @@ Qualidade do Código: Avaliação de boas práticas como a reutilização de com
 - Testes.
 
 ---
-⚠️ __Em desenvolvimento__
+
+## Rodando a Aplicação
+
+Com o código em mãos, a partir do local onde se encontra esse readme, suba mais um nível de pastas
+
+A partir daí, utilize um bash para instalar as dependências e o node modules, para isso insira o código
+
+`$ npm install`
+
+A partir desse momento a aplicação está pronta para execução local, para isso rode o código
+
+ `$ npm run dev`
+ 
+ E acesse a partir do navegador de sua preferência o enderelo http://localhost:3000/
+
+Esse servidor servirá de base de desenvolvimento, para mostrar erros de compilações, e para prever como está ficando sua aplicação.
